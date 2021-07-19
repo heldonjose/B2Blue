@@ -23,6 +23,8 @@
 
      <link href="{% static 'core/vendor/datatables/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
 
+    {% block css %}
+    {% endblock %}
 </head>
 
 <body id="page-top">
@@ -268,7 +270,7 @@
             <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
-            <div class="">
+            <div class="content" style="padding: 32px">
 
                 {% block content %}
                 {% endblock %}
